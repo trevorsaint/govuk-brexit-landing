@@ -1,4 +1,5 @@
 .govuk-alert-list {
+  @include govuk-font(19);
   @include list-reset();
 }
 
