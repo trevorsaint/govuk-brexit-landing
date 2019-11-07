@@ -1,3 +1,3 @@
-# GOV.UK Dynamic List
+# GOV.UK Brexit landing page
 
-Prototype: A questions flow, with results, for the Brexit checker.
+Prototype: Variations of the Brexit landing page
