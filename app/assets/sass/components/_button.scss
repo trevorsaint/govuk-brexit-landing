@@ -1,0 +1,57 @@
+.govuk-button-brexit {
+  @include govuk-font(24, $weight: bold, $line-height: 72px);
+  height: 72px;
+  text-decoration: none;
+
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  background-color: govuk-brexit-colour("red");
+  padding-left: govuk-spacing(4);
+  padding-right: govuk-spacing(4);
+  height: 72px;
+  display: inline-block;
+  position: relative;
+
+  margin-top: govuk-spacing(5);
+  margin-bottom: govuk-spacing(5);
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: govuk-brexit-colour("red");
+  }
+
+  &:focus {
+    background-color: govuk-colour("yellow");
+    border: 0 none;
+    text-decoration: none;
+    box-shadow: none;
+    outline: none;
+  }
+
+}
+
+
+
+// Button label
+.govuk-button-brexit__label {
+  color: govuk-colour("white");
+}
+
+.govuk-button-brexit:focus .govuk-button-brexit__label {
+  color: govuk-colour("black");
+}
+
+
+// Button SVG
+.govuk-button-brexit__svg {
+  position: absolute;
+  fill: currentColor;
+  right: -90px;
+  top: 0;
+}
+
+.govuk-button-brexit:focus .govuk-button-brexit__svg {
+  color: govuk-colour("yellow");
+}

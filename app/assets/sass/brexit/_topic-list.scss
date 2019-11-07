@@ -1,0 +1,11 @@
+.govuk-topic-list {
+  @include list-reset();
+}
+
+.govuk-topic-list__item {
+  margin-bottom: govuk-spacing(2);
+}
+
+.govuk-topic-list__link {
+  @include govuk-font(19, $weight: bold);
+}

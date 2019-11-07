@@ -1,0 +1,17 @@
+.govuk-stay-informed {
+  @include govuk-responsive-margin(8, "top");
+  background-color: govuk-brexit-colour("lightgrey");
+  border: 1px solid govuk-brexit-colour("darkgrey");
+  padding: govuk-spacing(6);
+}
+
+.govuk-stay-informed__icon {
+  float: left;
+  margin-right: govuk-spacing(1);
+  position: relative;
+  top: 3px;
+}
+
+.govuk-stay-informed__title {
+  margin-bottom: govuk-spacing(2);
+}
