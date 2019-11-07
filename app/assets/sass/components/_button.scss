@@ -1,19 +1,16 @@
 .govuk-button-brexit {
   @include govuk-font(24, $weight: bold, $line-height: 72px);
-  height: 72px;
-  text-decoration: none;
-
+  background-color: govuk-brexit-colour("red");
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
-  background-color: govuk-brexit-colour("red");
-  padding-left: govuk-spacing(4);
-  padding-right: govuk-spacing(4);
-  height: 72px;
   display: inline-block;
-  position: relative;
-
+  height: 72px;
   margin-top: govuk-spacing(5);
   margin-bottom: govuk-spacing(5);
+  padding-left: govuk-spacing(4);
+  padding-right: govuk-spacing(4);
+  position: relative;
+  text-decoration: none;
 
   &:link,
   &:visited,
@@ -25,13 +22,12 @@
   &:focus {
     background-color: govuk-colour("yellow");
     border: 0 none;
-    text-decoration: none;
     box-shadow: none;
     outline: none;
+    text-decoration: none;
   }
 
 }
-
 
 
 // Button label
