@@ -19,6 +19,10 @@
     color: govuk-brexit-colour("red");
   }
 
+  &:hover {
+    background-color: govuk-brexit-colour("dark-red");
+  }
+
   &:focus {
     background-color: govuk-colour("yellow");
     border: 0 none;
@@ -46,6 +50,10 @@
   fill: currentColor;
   right: -90px;
   top: 0;
+}
+
+.govuk-button-brexit:hover .govuk-button-brexit__svg {
+  color: govuk-brexit-colour("dark-red");
 }
 
 .govuk-button-brexit:focus .govuk-button-brexit__svg {
