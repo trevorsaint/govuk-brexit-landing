@@ -63,6 +63,10 @@ body {
 
 }
 
+.govuk-landing-alert p {
+  color: white;
+}
+
 
 .govuk-video {
   @include aspect-ratio(16,9);
