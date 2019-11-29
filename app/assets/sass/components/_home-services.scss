@@ -1,0 +1,64 @@
+// Home services
+
+.govuk-home-services__heading {
+  margin-bottom: govuk-spacing(0);
+}
+
+
+.govuk-home-services__excerpt {
+  margin-bottom: govuk-spacing(3);
+
+  @include govuk-media-query($from: tablet) {
+    min-height: 40px;
+  }
+
+}
+
+
+.govuk-home__promo-image {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+
+// Border
+.govuk-section-break--dark {
+  color:  govuk-colour("black");
+}
+
+.govuk-section-break--thick {
+  border-bottom: govuk-spacing(1) solid currentColor;
+}
+
+
+
+// Numbers
+.govuk-home-numbers {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.govuk-home-numbers__item {
+  margin-bottom: 40px;
+
+  // &:last-child {
+  //   margin-bottom: 0;
+  // }
+
+}
+
+.govuk-home-numbers__link {
+  text-decoration: none;
+  display: block;
+}
+
+.govuk-home-numbers__number {
+  @include govuk-font(80, $weight: bold);
+  display: block;
+}
+
+.govuk-link--no-underline {
+  text-decoration: none !important;
+}
