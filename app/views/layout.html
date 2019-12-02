@@ -29,6 +29,9 @@
 {% from "govuk/components/textarea/macro.njk"         import govukTextarea %}
 {% from "govuk/components/warning-text/macro.njk"     import govukWarningText %}
 
+{# This app components #}
+{% from "search/macro.njk"                            import appSearch %}
+
 {% block head %}
   {% include "includes/head.html" %}
 {% endblock %}
@@ -40,11 +43,12 @@
 {% block header %}
   {% include "includes/cookie-banner.html" %}
   {{ govukHeader({
-    homepageUrl: "#"
+    homepageUrl: "/"
   }) }}
 {% endblock %}
 
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing  govuk-main-wrapper--brexit") %}
+
 
 {% if useAutoStoreData %}
   {% block footer %}

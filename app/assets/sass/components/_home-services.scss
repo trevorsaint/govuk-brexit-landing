@@ -1,7 +1,71 @@
+// Home links
+.govuk-home__links {
+
+  @include govuk-media-query($from: tablet) {
+    background-color: govuk-colour("black");
+    box-sizing: border-box;
+    bottom: 0;
+    padding: 15px 20px 25px 20px;
+    position: absolute;
+    right: -15px;
+    width: 33.33%;
+    z-index: 1;
+  }
+
+}
+
+
+.govuk-home__links-title {
+  @include govuk-font(19, $weight: regular);
+  margin-bottom: 0;
+  margin-top: govuk-spacing(1);
+}
+
+
+.govuk-home__links-item {
+  margin-bottom: govuk-spacing(1);
+  margin-top: govuk-spacing(1);
+}
+
+
+.govuk-home__links-link {
+  @include govuk-font(16, $weight: bold);
+
+  &:link,
+  &:visited {
+    color: govuk-colour("white");
+  }
+
+  &:hover {
+    color: rgba(govuk-colour("white"), .75); // Subtle tint for hover
+  }
+
+  &:focus {
+    color: govuk-colour("black");
+  }
+
+}
+
+
+.govuk-home__links-list {
+  @include list-reset;
+  margin-top: govuk-spacing(2);
+}
+
+
+
 // Home services
+.govuk-home-services {
+
+  @include govuk-media-query($from: tablet) {
+    padding-top: spacing(5);
+  }
+
+}
+
 
 .govuk-home-services__heading {
-  margin-bottom: govuk-spacing(0);
+  margin-bottom: govuk-spacing(1);
 }
 
 
@@ -9,7 +73,7 @@
   margin-bottom: govuk-spacing(3);
 
   @include govuk-media-query($from: tablet) {
-    min-height: 40px;
+    min-height: govuk-spacing(7);
   }
 
 }
@@ -17,14 +81,14 @@
 
 .govuk-home__promo-image {
   display: block;
+  margin-bottom: govuk-spacing(4);
   max-width: 100%;
-  margin-bottom: 20px;
 }
 
 
-// Border
+// HRs
 .govuk-section-break--dark {
-  color:  govuk-colour("black");
+  color: govuk-colour("black");
 }
 
 .govuk-section-break--thick {
@@ -33,32 +97,24 @@
 
 
 
-// Numbers
+// Home numbers
 .govuk-home-numbers {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include list-reset;
 }
+
 
 .govuk-home-numbers__item {
-  margin-bottom: 40px;
-
-  // &:last-child {
-  //   margin-bottom: 0;
-  // }
-
+  @include govuk-responsive-margin(7, "bottom");
 }
+
 
 .govuk-home-numbers__link {
-  text-decoration: none;
   display: block;
+  text-decoration: none;
 }
+
 
 .govuk-home-numbers__number {
   @include govuk-font(80, $weight: bold);
   display: block;
-}
-
-.govuk-link--no-underline {
-  text-decoration: none !important;
 }

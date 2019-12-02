@@ -4,8 +4,87 @@
 {% block pageTitle %}Welcome to GOV.UK{% endblock %}
 
 
+{% set mainClasses = "govuk-!-padding-top-0  govuk-main-wrapper--brexit" %}
+
+
 {% block content %}
 
+
+<!-- Masthead -->
+<div class="govuk-landing-masthead govuk-landing-masthead--home">
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-3">Welcome to GOV.UK</h1>
+
+      <p class="govuk-body govuk-!-margin-bottom-0">The best place to find government services and information</p>
+
+      <p class="govuk-body govuk-!-font-weight-bold">Simpler, clearer, faster</p>
+
+      {{ appSearch({
+        attributes: {
+          id: "search-form"
+        },
+        inverse: true,
+        label: {
+          text: "Search GOV.UK"
+        }
+      }) }}
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <!-- Home links -->
+      <div class="govuk-home__links">
+
+        <h2 class="govuk-home__links-title">Popular on GOV.UK</h2>
+
+        <ul class="govuk-home__links-list">
+          <li class="govuk-home__links-item"><a class="govuk-home__links-link" href="#">Brexit</a></li>
+          <li class="govuk-home__links-item"><a class="govuk-home__links-link" href="#">Find a job</a></li>
+          <li class="govuk-home__links-item"><a class="govuk-home__links-link" href="#">Renew vehicle tax</a></li>
+          <li class="govuk-home__links-item"><a class="govuk-home__links-link" href="#">Book your theory test</a></li>
+          <li class="govuk-home__links-item"><a class="govuk-home__links-link" href="#">Personal tax account</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- Get ready for Brexit -->
+<section class="govuk-home-services" aria-labelledby="get-ready-for-brexit">
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <h2 class="govuk-heading-m" id="get-ready-for-brexit">Get ready for Brexit</h2>
+
+      <p>A Brexit deal has been agreed in principle with the EU.</p>
+
+      <p>Both the UK and the EU need to approve and sign the withdrawel agreement.</p>
+
+      <p><a class="govuk-link govuk-link--no-visited-state govuk-!-font-weight-bold" href="#">Find out what this means for you</a>.</p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--thick  govuk-section-break--dark govuk-section-break--visible" aria-hidden="true">
+
+
+<!-- Services and information -->
 <section class="govuk-home-services" aria-labelledby="services-and-information">
 
   <h2 class="govuk-visually-hidden" id="services-and-information">Services and information</h2>
@@ -18,72 +97,33 @@
       <ul class="govuk-list">
 
         <li>
-          <h3 class="home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Benefits</a></h3>
-          <p class="home-services__excerpt govuk-body-s">Includes eligibility, appeals, tax credits and Universal Credit</p>
+          <h3 class="govuk-home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Benefits</a></h3>
+          <p class="govuk-home-services__excerpt govuk-body-s">Includes eligibility, appeals, tax credits and Universal Credit</p>
         </li>
 
         <li>
-          <h3 class="home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Births, deaths, marriages and care</a></h3>
-          <p class="home-services__excerpt govuk-body-s">Parenting, civil partnerships, divorce and Lasting Power of Attorney</p>
+          <h3 class="govuk-home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Births, deaths, marriages and care</a></h3>
+          <p class="govuk-home-services__excerpt govuk-body-s">Parenting, civil partnerships, divorce and Lasting Power of Attorney</p>
         </li>
 
         <li>
-          <h3 class="home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Business and self-employed</a></h3>
-          <p class="home-services__excerpt govuk-body-s">Tools and guidance for businesses</p>
+          <h3 class="govuk-home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Business and self-employed</a></h3>
+          <p class="govuk-home-services__excerpt govuk-body-s">Tools and guidance for businesses</p>
         </li>
 
         <li>
-          <h3 class="home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Childcare and parenting</a></h3>
-          <p class="home-services__excerpt govuk-body-s">Includes giving birth, fostering, adopting, benefits for children, childcare and schools</p>
+          <h3 class="govuk-home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Childcare and parenting</a></h3>
+          <p class="govuk-home-services__excerpt govuk-body-s">Includes giving birth, fostering, adopting, benefits for children, childcare and schools</p>
         </li>
 
         <li>
-          <h3 class="home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Citizenship and living in the UK</a></h3>
-          <p class="home-services__excerpt govuk-body-s">Voting, community participation, life in the UK, international projects</p>
+          <h3 class="govuk-home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Citizenship and living in the UK</a></h3>
+          <p class="govuk-home-services__excerpt govuk-body-s">Voting, community participation, life in the UK, international projects</p>
         </li>
 
         <li>
-          <h3 class="home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Crime, justice and the law</a></h3>
-          <p class="home-services__excerpt govuk-body-s">Legal processes, courts and the police</p>
-        </li>
-
-      </ul>
-
-    </div>
-
-    <!-- Column-->
-    <div class="govuk-grid-column-one-third">
-
-      <ul class="govuk-list">
-
-        <li>
-          <h3 class="home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Disabled people</a></h3>
-          <p class="home-services__excerpt govuk-body-s">Includes carers, your rights, benefits and the Equality Act</p>
-        </li>
-
-        <li>
-          <h3 class="home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Driving and transport</a></h3>
-          <p class="home-services__excerpt govuk-body-s">Includes vehicle tax, MOT and driving licences</p>
-        </li>
-
-        <li>
-          <h3 class="home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Education and learning</a></h3>
-          <p class="home-services__excerpt govuk-body-s">Includes student loans, admissions and apprenticeships</p>
-        </li>
-
-        <li>
-          <h3 class="home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Employing people</a></h3>
-          <p class="home-services__excerpt govuk-body-s">Includes pay, contracts and hiring</p>
-        </li>
-
-        <li>
-          <h3 class="home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Environment and countryside</a></h3>
-          <p class="home-services__excerpt govuk-body-s">Includes flooding, recycling and wildlife</p>
-        </li>
-
-        <li>
-          <h3 class="home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Housing and local services</a></h3>
-          <p class="home-services__excerpt govuk-body-s">Owning or renting and council services</p>
+          <h3 class="govuk-home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Crime, justice and the law</a></h3>
+          <p class="govuk-home-services__excerpt govuk-body-s">Legal processes, courts and the police</p>
         </li>
 
       </ul>
@@ -96,23 +136,62 @@
       <ul class="govuk-list">
 
         <li>
-          <h3 class="home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Money and tax</a></h3>
-          <p class="home-services__excerpt govuk-body-s">Includes debt and Self Assessment</p>
+          <h3 class="govuk-home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Disabled people</a></h3>
+          <p class="govuk-home-services__excerpt govuk-body-s">Includes carers, your rights, benefits and the Equality Act</p>
         </li>
 
         <li>
-          <h3 class="home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Passports, travel and living abroad</a></h3>
-          <p class="home-services__excerpt govuk-body-s">Includes renewing passports and travel advice by country</p>
+          <h3 class="govuk-home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Driving and transport</a></h3>
+          <p class="govuk-home-services__excerpt govuk-body-s">Includes vehicle tax, MOT and driving licences</p>
         </li>
 
         <li>
-          <h3 class="home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Visas and immigration</a></h3>
-          <p class="home-services__excerpt govuk-body-s">Visas, asylum and sponsorship</p>
+          <h3 class="govuk-home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Education and learning</a></h3>
+          <p class="govuk-home-services__excerpt govuk-body-s">Includes student loans, admissions and apprenticeships</p>
         </li>
 
         <li>
-          <h3 class="home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Working, jobs and pensions</a></h3>
-          <p class="home-services__excerpt govuk-body-s">Includes holidays and finding a job</p>
+          <h3 class="govuk-home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Employing people</a></h3>
+          <p class="govuk-home-services__excerpt govuk-body-s">Includes pay, contracts and hiring</p>
+        </li>
+
+        <li>
+          <h3 class="govuk-home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Environment and countryside</a></h3>
+          <p class="govuk-home-services__excerpt govuk-body-s">Includes flooding, recycling and wildlife</p>
+        </li>
+
+        <li>
+          <h3 class="govuk-home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Housing and local services</a></h3>
+          <p class="govuk-home-services__excerpt govuk-body-s">Owning or renting and council services</p>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <!-- Column-->
+    <div class="govuk-grid-column-one-third">
+
+      <ul class="govuk-list">
+
+        <li>
+          <h3 class="govuk-home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Money and tax</a></h3>
+          <p class="govuk-home-services__excerpt govuk-body-s">Includes debt and Self Assessment</p>
+        </li>
+
+        <li>
+          <h3 class="govuk-home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Passports, travel and living abroad</a></h3>
+          <p class="govuk-home-services__excerpt govuk-body-s">Includes renewing passports and travel advice by country</p>
+        </li>
+
+        <li>
+          <h3 class="govuk-home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Visas and immigration</a></h3>
+          <p class="govuk-home-services__excerpt govuk-body-s">Visas, asylum and sponsorship</p>
+        </li>
+
+        <li>
+          <h3 class="govuk-home-services__heading govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Working, jobs and pensions</a></h3>
+          <p class="govuk-home-services__excerpt govuk-body-s">Includes holidays and finding a job</p>
         </li>
 
       </ul>
@@ -124,9 +203,10 @@
 </section>
 
 
-<hr class="govuk-section-break govuk-section-break--l govuk-section-break--thick  govuk-section-break--dark govuk-section-break--visible">
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--thick  govuk-section-break--dark govuk-section-break--visible" aria-hidden="true">
 
 
+<!-- Departments and policy -->
 <section class="govuk-home-services" aria-labelledby="departments-and-policy">
 
   <h2 class="govuk-visually-hidden" id="departments-and-policy">Services and information</h2>
@@ -167,20 +247,20 @@
 
     <div class="govuk-grid-column-one-third">
       <a href="#" aria-hidden="true" tabindex="-1"><img class="govuk-home__promo-image" src="https://assets.publishing.service.gov.uk/frontend/homepage/nhs-long-term-plan-495f6e127d8e29d77cdc8ca724043fda508a74cb381ac216129a98693d53891d.png" alt=""></a>
-      <h3 class="govuk-home-services__heading govuk-heading-m"><a class="govuk-link govuk-link--no-visited-state" href="#">NHS long-term plan</a></h3>
-      <p class="govuk-home-services__excerpt govuk-body-s">Read about how an extra &pound;33.9 billion each year will improve the NHS - for patients, their families and its staff.</p>
+      <h3 class="govuk-govuk-home-services__heading govuk-heading-m"><a class="govuk-link govuk-link--no-visited-state" href="#">NHS long-term plan</a></h3>
+      <p class="govuk-govuk-home-services__excerpt govuk-body-s">Read about how an extra &pound;33.9 billion each year will improve the NHS - for patients, their families and its staff.</p>
     </div>
 
     <div class="govuk-grid-column-one-third">
       <a href="#" aria-hidden="true" tabindex="-1"><img class="govuk-home__promo-image" src="https://assets.publishing.service.gov.uk/frontend/homepage/brexit-e59549fe83430d4e9bebaeb05d88c420838455087fbbe3467d9056c2f528b55b.png" alt=""></a>
-      <h3 class="govuk-home-services__heading govuk-heading-m"><a href="#">Brexit information</a></h3>
-      <p class="govuk-home-services__excerpt govuk-body-s">Find out what Brexit means for you.</p>
+      <h3 class="govuk-govuk-home-services__heading govuk-heading-m"><a class="govuk-link govuk-link--no-visited-state" href="#">Brexit information</a></h3>
+      <p class="govuk-govuk-home-services__excerpt govuk-body-s">Find out what Brexit means for you.</p>
     </div>
 
     <div class="govuk-grid-column-one-third">
       <a href="#" aria-hidden="true" tabindex="-1"><img class="govuk-home__promo-image" src="https://assets.publishing.service.gov.uk/frontend/homepage/grenfell-tower-support-06932b160e2a050a3c3cf663e03edcb389e4d20829442d51149f1783138c67f4.png" alt=""></a>
-      <h3 class="govuk-home-services__heading govuk-heading-m"><a href="#">Grenfell Tower fire</a></h3>
-      <p class="govuk-home-services__excerpt govuk-body-s">Find out about the support available.</p>
+      <h3 class="govuk-govuk-home-services__heading govuk-heading-m"><a class="govuk-link govuk-link--no-visited-state" href="#">Grenfell Tower fire</a></h3>
+      <p class="govuk-govuk-home-services__excerpt govuk-body-s">Find out about the support available.</p>
     </div>
 
   </div>
@@ -188,9 +268,10 @@
 </section>
 
 
-<hr class="govuk-section-break govuk-section-break--l govuk-section-break--thick  govuk-section-break--dark govuk-section-break--visible">
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--thick  govuk-section-break--dark govuk-section-break--visible" aria-hidden="true">
 
 
+<!-- More on gov -->
 <section class="govuk-home-services">
 
   <div class="govuk-grid-row">
@@ -205,7 +286,7 @@
         <li><a class="govuk-link govuk-link--no-visited-state govuk-!-font-weight-bold" href="#">Find a job</a></li>
         <li><a class="govuk-link govuk-link--no-visited-state govuk-!-font-weight-bold" href="#">Log in to student finance</a></li>
         <li><a class="govuk-link govuk-link--no-visited-state govuk-!-font-weight-bold" href="#">Passport fees</a></li>
-        <li><a class="govuk-link govuk-link--no-visited-state govuk-!-font-weight-bold" href="#">Jobseeker's Allowance</a></li>
+        <li><a class="govuk-link govuk-link--no-visited-state govuk-!-font-weight-bold" href="#">Jobseeker’s Allowance</a></li>
         <li><a class="govuk-link govuk-link--no-visited-state govuk-!-font-weight-bold" href="#">Council Tax bands</a></li>
         <li><a class="govuk-link govuk-link--no-visited-state govuk-!-font-weight-bold" href="#">Running a limited company</a></li>
         <li><a class="govuk-link govuk-link--no-visited-state govuk-!-font-weight-bold" href="#">Driving theory test</a></li>
@@ -217,7 +298,7 @@
 
     <div class="govuk-grid-column-one-third">
       <a href="#" aria-hidden="true" tabindex="-1"><img class="govuk-home__promo-image" src="/public/images/promo-bank-holidays.png" alt=""></a>
-      <p class="govuk-home-services__excerpt govuk-body-s">Check the dates for <a class="govuk-link" href="#">bank holidays</a> in England, Wales, Scotland and Northern Ireland.</p>
+      <p class="govuk-govuk-home-services__excerpt govuk-body-s">Check the dates for <a class="govuk-link govuk-link--no-visited-state" href="#">bank holidays</a> in England, Wales, Scotland and Northern Ireland.</p>
     </div>
 
   </div>

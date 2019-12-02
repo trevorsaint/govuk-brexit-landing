@@ -18,3 +18,5 @@ $govuk-assets-path: '/govuk/assets/';
 @import "components/all";
 @import "brexit/all";
 
+// Import local dependencies
+@import "../../../src/all";
