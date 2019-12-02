@@ -40,6 +40,11 @@ body {
 .govuk-landing-masthead--home {
   @include govuk-responsive-margin(6, "bottom");
   background-color: govuk-colour("blue");
+
+  @include govuk-media-query($from: tablet) {
+    padding-bottom: 0;
+  }
+
 }
 
 
