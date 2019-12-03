@@ -63,7 +63,7 @@
 @media only screen and (max-width : 480px) {
 
   .govuk-button-brexit {
-  @include govuk-font(24, $weight: bold, $line-height: 72px);
+  @include govuk-font(16, $weight: bold, $line-height: 72px);
   background-color: govuk-brexit-colour("red");
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
@@ -73,6 +73,8 @@
   margin-bottom: govuk-spacing(3);
   padding-left: govuk-spacing(3);
   padding-right: govuk-spacing(1);
+  // padding-top: govuk-spacing(1);
+  // padding-bottom: govuk-spacing(1);
   position: relative;
   text-decoration: none;
 
