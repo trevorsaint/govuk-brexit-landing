@@ -9,6 +9,12 @@
 
 {% block content %}
 
+<!-- Brexit alert -->
+<div class="govuk-brexit-alert" id="brexit-alert" role="alert">
+  <strong class="govuk-brexit-alert__title"><a href="#">Get ready for Brexit</a></strong>
+  <button class="govuk-brexit-alert__hide" type="button">Hide message</button>
+</div>
+
 
 <!-- Masthead -->
 <div class="govuk-landing-masthead govuk-landing-masthead--home">
@@ -305,4 +311,14 @@
 
 </section>
 
+{% endblock %}
+
+
+{% block pageScripts %}
+  <script src="/public/javascripts/hide-message.js"></script>
+  <script>
+    new HideMessage({
+      container: document.getElementById('brexit-alert')
+    });
+  </script>
 {% endblock %}

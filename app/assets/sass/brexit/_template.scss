@@ -16,6 +16,7 @@ body {
   padding-top: govuk-spacing(5);
   position: relative;
 
+  // Hackery to get style outside of the container
   &::before,
   &::after {
     background-color: inherit;
@@ -56,6 +57,7 @@ body {
   padding-top: govuk-spacing(5);
   position: relative;
 
+  // Hackery to get style outside of the container
   &::before,
   &::after {
     background-color: inherit;
