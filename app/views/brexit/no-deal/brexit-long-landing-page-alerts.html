@@ -4,7 +4,7 @@
 {% block pageTitle %}Brexit: the UK has left the EU with no deal{% endblock %}
 
 
-{% set mainClasses = "govuk-!-padding-top-0  govuk-main-wrapper--brexit" %}
+{% set mainClasses = "govuk-!-padding-top-0  govuk-!-padding-bottom-0  govuk-main-wrapper--brexit" %}
 
 
 {% block content %}
@@ -26,26 +26,26 @@
     }) }}
 
     <div class="govuk-grid-row">
+
       <div class="govuk-grid-column-two-thirds">
+
         <h1 class="govuk-heading-xl">Brexit: the UK has left the EU with no deal</h1>
 
         <div class="govuk-warning-text">
-              <span class="govuk-warning-text__icon icon-white" aria-hidden="true" style="color: #000000;
-    background: #ffffff; border: 3px solid #ffffff;">!</span>
-              <strong class="govuk-warning-text__text" style="color: #ffffff;">
-                <span class="govuk-warning-text__assistive">Warning</span>
-                Act now. You may not be able to visit or live in the EU, or do business with EU countries, if you do not take action.
-              </strong>
-            </div>
+          <span class="govuk-warning-text__icon icon-white" aria-hidden="true" style="color: #182D4E; background: #ffffff; border: 3px solid #ffffff;">!</span>
+          <strong class="govuk-warning-text__text" style="color: #ffffff;">
+            <span class="govuk-warning-text__assistive">Warning</span>
+            Act now. You may not be able to visit or live in the EU, or do business with EU countries, if you do not take action.
+          </strong>
+        </div>
 
         <a class="govuk-button-brexit" href="#">
           <span class="govuk-button-brexit__label">Check what you must do now</span>
           <svg class="govuk-button-brexit__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 72" width="90" height="72"><path d="M0,0h0.9C1.7,0,2.5,0.3,3,0.9L3.1,1l29.7,33.1c1,1.1,1,2.7,0.1,3.9l-0.1,0.2L3.4,71c-0.5,0.6-1.3,0.9-2,1l-0.2,0H0V0h0.9H0z M56.2,0c0.8,0,1.6,0.3,2.2,1l30.8,33.1c1.1,1.2,1.1,2.9,0,4.1L58.6,71c-0.6,0.6-1.4,1-2.2,1H31.5c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1-0.1-1.4c5-5.5,10-11,15.1-16.4l14.4-15.7c1.1-1.1,1.1-2.9,0-4.1L30.5,1.7c-0.2-0.2-0.3-0.4-0.3-0.7c0-0.6,0.4-1,1-1H56.2z"/></svg>
         </a>
 
-      
-
       </div>
+
     </div>
 
   </div>
@@ -60,14 +60,6 @@
         <h2 class="govuk-heading-m" style="margin-top: 15px;">Alert: Something big is happening and you should act now</h2>
           <p class="govuk-body">Something has happened – you should act now. A description on the thing that is happening.</p>
           <p><a class="govuk-link  govuk-link--invert" href="#">Find out more</a></p>
-      </div>
-
-      <div class="govuk-grid-column-one-third">
-        <!-- <h2 class="govuk-heading-m">Other alerts</h2>
-        <ul class="govuk-alert-list">
-          <li class="govuk-alert-list__item"><a class="govuk-link  govuk-link--invert" href="#">Something has happened - you should act now</a></li>
-          <li class="govuk-alert-list__item"><a class="govuk-link  govuk-link--invert" href="#">Another emergency is in place, avoid doing a thing</a></li>
-        </ul> -->
       </div>
 
     </div>
@@ -87,7 +79,7 @@
           <h2 class="govuk-heading-m">What a no deal Brexit means</h2>
           <p>The UK has left the EU without agreeing the terms of its withdrawal or future relationship with the EU.</p>
           <p>Different rules now apply to people living, working and travelling in the EU. Rules for doing business in both the UK and the EU have also changed.</p>
-          <p>The UK plans to negotiate a new relationship, including trading arrangements, with the EU. Any new agreement is likely to involve more changes that could affect you, your family or your business.</p>
+          <p class="govuk-!-margin-bottom-0">The UK plans to negotiate a new relationship, including trading arrangements, with the EU. Any new agreement is likely to involve more changes that could affect you, your family or your business.</p>
         </div>
       </div>
 
@@ -109,7 +101,11 @@
         </div>
 
         <div class="govuk-grid-column-two-thirds">
-          <div class="govuk-video"></div>
+
+          <div class="govuk-video">
+            <img srcset="/public/images/video-sample.png 1x, /public/images/video-sample@2x.png 2x" src="/public/images/video-sample.png" alt="GOV.UK: Brexit on YouTube">
+          </div>
+
           {{ govukDetails({
             summaryText: "Read the transcript for this video",
             text: "Content goes here..."
@@ -199,7 +195,7 @@
 
           <div class="govuk-grid-column-two-thirds">
             <p>You must check whether you need to apply to the settlement scheme if you or your family are from the EU, or from Switzerland, Norway, Icelan or Liechtensien.</p>
-            <p class="govuk-!-font-weight-bold"><a class="govuk-link  govuk-link--no-visited-state" href="#">Check what you must do to stay in the UK</a></p>
+            <p class="govuk-!-margin-bottom-0 govuk-!-font-weight-bold"><a class="govuk-link  govuk-link--no-visited-state" href="#">Check what you must do to stay in the UK</a></p>
           </div>
 
         </div>

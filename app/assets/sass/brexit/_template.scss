@@ -86,6 +86,12 @@ body {
   @include aspect-ratio(16,9);
   background-color: govuk-colour("black");
   margin-bottom: govuk-spacing(4);
+
+  // Make image responsive
+  img {
+    max-width: 100%;
+  }
+
 }
 
 
@@ -109,8 +115,8 @@ body {
 // Sections
 .govuk-landing-page__section {
   border-top: 3px solid govuk-brexit-colour("red");
-  padding-bottom: govuk-spacing(6);
-  padding-top: govuk-spacing(6);
+  padding-bottom: govuk-spacing(7);
+  padding-top: govuk-spacing(7);
 
   &:last-child {
     padding-bottom: 0;

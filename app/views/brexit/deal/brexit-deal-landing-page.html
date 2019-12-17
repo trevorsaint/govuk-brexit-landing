@@ -1,10 +1,10 @@
 {% extends "layout.html" %}
 
 
-{% block pageTitle %}Brexit: the UK has left the EU with no deal{% endblock %}
+{% block pageTitle %}Brexit: the UK has left the EU with a Brexit deal{% endblock %}
 
 
-{% set mainClasses = "govuk-!-padding-top-0  govuk-main-wrapper--brexit" %}
+{% set mainClasses = "govuk-!-padding-top-0  govuk-!-padding-bottom-0  govuk-main-wrapper--brexit" %}
 
 
 {% block content %}
@@ -28,53 +28,24 @@
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <h1 class="govuk-heading-xl">The UK has left the EU with a Brexit deal</h1>
-        
-        <p class="govuk-body govuk-!-font-size-19">There is now a transition period where the details of the UK’s future relationship with the EU will be agreed.</p>   
-        
+        <p class="govuk-body govuk-!-font-size-19">There is now a transition period where the details of the UK’s future relationship with the EU will be agreed.</p>
         <p class="govuk-body govuk-!-font-size-19">It is likely that many changes will be introduced during this time. You, your family or your business will have to take action to be ready for the new arrangements.</p>
-      
       </div>
-
     </div>
-  
+
   </div>
-<div class="govuk-stay-informed" style="margin-bottom: 30px; margin-top: 30px;">
-        <svg class="govuk-stay-informed__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="22" height="22"><path d="M6.9,15.9C6.9,15.9,6.9,15.9,6.9,15.9c0,1.2,1,2.1,2.1,2.1s2.1-1,2.1-2.1c0,0,0,0,0,0H6.9L6.9,15.9z M15.8,13.2l-1.9-2.8V6.8c0-2.4-1.7-4.4-3.9-4.8V1c0-0.5-0.4-1-1-1C8.5,0,8,0.4,8,1V2C5.8,2.5,4.1,4.5,4.1,6.8v3.5l-1.9,2.8c-0.3,0.4-0.2,1,0.3,1.3c0.2,0.1,0.4,0.2,0.5,0.2h12c0.5,0,1-0.4,1-1C16,13.5,15.9,13.3,15.8,13.2z"/></svg>
-        <h3 class="govuk-stay-informed__title govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Sign up for email alerts about changes that might affect you</a></h3>
-      </div>
 
-  <!-- Alert-->
-  <!-- <div class="govuk-landing-alert">
-
-    <div class="govuk-grid-row">
-
-      <div class="govuk-grid-column-two-thirds">
-        <h2 class="govuk-heading-l">No deal Brexit updates</h2>
-        <ul class="govuk-alert-list">
-          <li class="govuk-alert-list__item"><a class="govuk-link  govuk-link--invert" href="#">Something has happened - you should act now</a></li>
-          <li class="govuk-alert-list__item"><a class="govuk-link  govuk-link--invert" href="#">Another emergency is in place, avoid doing a thing</a></li>
-          <li class="govuk-alert-list__item"><a class="govuk-link  govuk-!-font-weight-bold  govuk-link--invert" href="#">View all Brexit updates</a></li>
-        </ul>
-      </div>
-
-      <div class="govuk-grid-column-one-third">
-        <h2 class="govuk-heading-m">Other alerts</h2>
-        <ul class="govuk-alert-list">
-          <li class="govuk-alert-list__item"><a class="govuk-link  govuk-link--invert" href="#">Something has happened - you should act now</a></li>
-          <li class="govuk-alert-list__item"><a class="govuk-link  govuk-link--invert" href="#">Another emergency is in place, avoid doing a thing</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-  </div> -->
+  <div class="govuk-stay-informed  govuk-!-margin-top-7  govuk-!-margin-bottom-7">
+    <svg class="govuk-stay-informed__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="22" height="22" aria-hidden="true"><path d="M6.9,15.9C6.9,15.9,6.9,15.9,6.9,15.9c0,1.2,1,2.1,2.1,2.1s2.1-1,2.1-2.1c0,0,0,0,0,0H6.9L6.9,15.9z M15.8,13.2l-1.9-2.8V6.8c0-2.4-1.7-4.4-3.9-4.8V1c0-0.5-0.4-1-1-1C8.5,0,8,0.4,8,1V2C5.8,2.5,4.1,4.5,4.1,6.8v3.5l-1.9,2.8c-0.3,0.4-0.2,1,0.3,1.3c0.2,0.1,0.4,0.2,0.5,0.2h12c0.5,0,1-0.4,1-1C16,13.5,15.9,13.3,15.8,13.2z"/></svg>
+    <p class="govuk-stay-informed__title govuk-!-font-weight-bold govuk-!-margin-bottom-0"><a class="govuk-link govuk-link--no-visited-state" href="#">Sign up for email alerts about changes that might affect you</a></p>
+  </div>
 
 
   <!-- Bucket -->
   <div class="govuk-landing-page">
 
 
-    <!-- Section -->
+    <!-- What a Brexit deal means -->
     <div class="govuk-landing-page__section">
 
       <div class="govuk-grid-row">
@@ -83,7 +54,7 @@
           <p>The UK has left the EU having agreed the terms of its withdrawal.</p>
           <p>There is now a transition period until 31 December 2020 in which the UK and EU will negotiate the details of their future relationship and trading arrangements.</p>
           <p>During the transition period the existing rules about living, working, travelling and doing business in the UK and EU apply until new rules are agreed.</p>
-          <p><a href="">Sign up for email alerts</a> to find out what this will mean to you, your family, or your business.</p>
+          <p class="govuk-!-margin-bottom-0"><a class="govuk-link govuk-link--no-visited-state" href="#">Sign up for email alerts</a> to find out what this will mean to you, your family, or your business.</p>
         </div>
 
       </div>
@@ -106,11 +77,17 @@
         </div>
 
         <div class="govuk-grid-column-two-thirds">
-          <div class="govuk-video"><img src="/public/images/brexit-video-01.png"></div>
+
+          <div class="govuk-video">
+            <img srcset="/public/images/video-sample.png 1x, /public/images/video-sample@2x.png 2x" src="/public/images/video-sample.png" alt="GOV.UK: Brexit on YouTube">
+          </div>
+
           {{ govukDetails({
+            classes: "govuk-!-margin-bottom-0",
             summaryText: "Read the transcript for this video",
             text: "Content goes here..."
           }) }}
+
         </div>
 
       </div>
@@ -119,12 +96,12 @@
 
 
 
-    <!-- Section -->
+    <!-- Brexit guidance -->
     <div class="govuk-landing-page__section">
 
       <h2 class="govuk-heading-l">Brexit guidance</h2>
-      <p>This section will be updated as details of the Brexit deal emerge.</p>
 
+      <p>This section will be updated as details of the Brexit deal emerge.</p>
 
       <div class="govuk-landing-page__subsection">
 
@@ -142,6 +119,7 @@
         </div>
 
       </div>
+
       <div class="govuk-landing-page__subsection">
 
         <div class="govuk-grid-row">
@@ -154,7 +132,7 @@
             <p>Living and working in an EU country depends on the rules in that country.</p>
             <p>You may need to register or apply for residency. You should check that you’re covered for healthcare.</p>
             <p>You must also exchange your UK driving licence for a licence issued by the EU country where you live.</p>
-            <p class="govuk-!-font-weight-bold"><a class="govuk-link  govuk-link--no-visited-state" href="#">Check what you must do in the country where you live</a></p>
+            <p class="govuk-!-margin-bottom-0"><a class="govuk-link  govuk-link--no-visited-state govuk-!-font-weight-bold" href="#">Check what you must do in the country where you live</a></p>
           </div>
 
         </div>
@@ -163,29 +141,15 @@
 
     </div>
 
-<!-- <div class="govuk-landing-page__section">
-  <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-
-      <h2 class="govuk-heading-l">No deal brexit</h2>
-
-      <p>If negotiations between the UK and EU fail to reach agreement in any area then no-deal arrangements for that area come into effect at the end of the transition period.</p>
-      <p><a href="">Find out how to prepare for a no deal Brexit</a></p>
-  </div>
-</div>
-</div> -->
-
 
     <!-- Section -->
     <div class="govuk-landing-page__section">
 
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-one-half" style="margin-bottom: 60px;">
-
             <h2 class="govuk-heading-m">Guidance if the UK and EU fail to reach agreements</h2>
-
             <p>If negotiations between the UK and EU fail to reach agreement in any area then no-deal arrangements for that area come into effect at the end of the transition period.</p>
-            <p><a style="font-weight: 700" href="#">Find out how to prepare for a no deal Brexit</a></p>
+            <p><a class="govuk-link  govuk-link--no-visited-state  govuk-!-font-weight-bold" href="#">Find out how to prepare for a no deal Brexit</a></p>
         </div>
 
         <div class="govuk-grid-column-one-half">
