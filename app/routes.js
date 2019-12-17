@@ -129,4 +129,15 @@ router.post('/get-ready-for-brexit/what-does-your-business-or-organisation-do', 
 });
 
 
+
+// Pre deal
+router.get('/brexit/pre-deal/v1', function(req, res) {
+  res.render('brexit/pre-deal/index-v1');
+});
+
+router.get('/brexit/pre-deal/v2', function(req, res) {
+  res.render('brexit/pre-deal/index-v2');
+});
+
+
 module.exports = router;
