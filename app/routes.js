@@ -147,5 +147,9 @@ router.get('/brexit/pre-deal/v4', function(req, res) {
   res.render('brexit/pre-deal/index-v4');
 });
 
+router.get('/brexit/deal/v2', function(req, res) {
+  res.render('brexit/deal/brexit-deal-landing-page-v2');
+});
+
 
 module.exports = router;
