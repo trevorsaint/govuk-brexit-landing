@@ -37,6 +37,11 @@ body {
 }
 
 
+.govuk-landing-masthead--alt {
+  background-color: govuk-colour("blue");
+}
+
+
 // GOVUK home specific masthead
 .govuk-landing-masthead--home {
   @include govuk-responsive-margin(6, "bottom");
@@ -123,6 +128,18 @@ body {
   }
 
 }
+
+
+.govuk-landing-page__section--alt {
+  border-top-color: govuk-colour("black");
+}
+
+
+.govuk-landing-page__section--no-border {
+  border-top: 0;
+  padding-top: govuk-spacing(3);
+}
+
 
 .govuk-landing-page__subsection {
   border-top: 1px solid $govuk-border-colour;
