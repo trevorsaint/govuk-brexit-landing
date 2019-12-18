@@ -7,6 +7,12 @@
   color: govuk-colour("white");
 }
 
+
+.govuk-breadcrumbs__list-item:before {
+  border-color: govuk-colour("white");
+}
+
+
 .govuk-breadcrumbs--ondark .govuk-breadcrumbs__link {
   &:link,
   &:visited,
