@@ -131,10 +131,6 @@ router.post('/get-ready-for-brexit/what-does-your-business-or-organisation-do', 
 
 
 // Pre deal
-router.get('/brexit/pre-deal/v1', function(req, res) {
-  res.render('brexit/pre-deal/index-v1');
-});
-
 router.get('/brexit/pre-deal/v2', function(req, res) {
   res.render('brexit/pre-deal/index-v2');
 });
@@ -147,8 +143,18 @@ router.get('/brexit/pre-deal/v4', function(req, res) {
   res.render('brexit/pre-deal/index-v4');
 });
 
+router.get('/brexit/pre-deal/v5', function(req, res) {
+  res.render('brexit/pre-deal/index-v5');
+});
+
+
+// Deal
 router.get('/brexit/deal/v2', function(req, res) {
-  res.render('brexit/deal/brexit-deal-landing-page-v2');
+  res.render('brexit/deal/index-v2');
+});
+
+router.get('/brexit/deal/v3', function(req, res) {
+  res.render('brexit/deal/index-v3');
 });
 
 
