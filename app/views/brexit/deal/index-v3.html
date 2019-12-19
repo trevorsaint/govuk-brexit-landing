@@ -18,19 +18,34 @@
         {
           text: "Home",
           href: "/"
-        },
-        {
-          text: "Brexit"
         }
       ]
     }) }}
 
     <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-one-third  govuk-grid-column-one-third--right">
+        {{ appTranslationNavigation({
+          classes: "app-c-translation-nav--inverse",
+          items: [{
+            href: "#",
+            text: "English",
+            locale: "en",
+            active: true
+          }, {
+            href: "#",
+            text: "Cymraeg",
+            locale: "cy"
+          }]
+        }) }}
+      </div>
+
       <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-xl">The UK has left the EU with a Brexit deal</h1>
+        <h1 class="govuk-heading-xl govuk-!-margin-top-8 govuk-!-margin-bottom-4">The UK has left the EU with a Brexit deal</h1>
         <p class="govuk-body">There is now a transition period until the end of 2020.</p>
         <p class="govuk-body">The details of the UK’s future relationship with the EU are now being negotiated.</p>
       </div>
+
     </div>
 
   </div>

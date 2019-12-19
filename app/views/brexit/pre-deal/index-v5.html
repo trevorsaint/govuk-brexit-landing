@@ -15,18 +15,33 @@
         {
           text: "Home",
           href: "/"
-        },
-        {
-          text: "Brexit"
         }
       ]
     }) }}
 
     <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-one-third  govuk-grid-column-one-third--right">
+        {{ appTranslationNavigation({
+          classes: "app-c-translation-nav--inverse",
+          items: [{
+            href: "#",
+            text: "English",
+            locale: "en",
+            active: true
+          }, {
+            href: "#",
+            text: "Cymraeg",
+            locale: "cy"
+          }]
+        }) }}
+      </div>
+
       <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">The UK will leave the EU on 31 January 2020</h1>
+        <h1 class="govuk-heading-xl govuk-!-margin-top-8 govuk-!-margin-bottom-4">The UK will leave the EU on 31 January 2020</h1>
         <p class="govuk-body">A Brexit deal is ready to be agreed between the UK and the EU.</p>
       </div>
+
     </div>
 
   </div>
