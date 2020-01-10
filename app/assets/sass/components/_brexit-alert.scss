@@ -1,19 +1,11 @@
-
 .govuk-brexit-alert {
   background-color: rgba(govuk-brexit-colour("blue"), .1);
   box-shadow: inset 0 10px 0 0 govuk-brexit-colour("red");
-  padding-bottom: 10px;
-  padding-top: 30px;
+  padding-bottom: govuk-spacing(4);
+  padding-top: govuk-spacing(6);
   position: relative;
   z-index: 1;
 
-  // Enhances display of content if flex is supported
-  @supports (display: flex) {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  // Hackery to get style outside of the container
   &::before,
   &::after {
     background-color: inherit;
@@ -37,28 +29,32 @@
 
 .govuk-brexit-alert__title {
   @include govuk-font(19, $weight: bold);
+
+  @include govuk-media-query($from: tablet) {
+    margin-bottom: 0;
+  }
+
 }
 
-.govuk-brexit-alert__title p {
-  margin-bottom: 10px;
+
+.govuk-brexit-alert__link {
+  @include govuk-font(19);
 }
 
 
 .govuk-brexit-alert__hide {
   @include govuk-font(16);
-  cursor: pointer;
-  color: govuk-colour("blue");
-  padding: 0;
   background-color: transparent;
   border: 0 none;
+  color: govuk-colour("blue");
+  cursor: pointer;
+  padding: 0;
   text-decoration: underline;
 
-  // Does what we need if flex not supported
-  @supports not (display: flex) {
+  @include govuk-media-query($from: tablet) {
     float: right;
   }
 
-  // Remove outline
   &::-moz-focus-inner {
     border: 0;
   }
