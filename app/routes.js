@@ -163,6 +163,14 @@ router.get('/brexit/pre-deal/v9', function(req, res) {
   res.render('brexit/pre-deal/index-v9');
 });
 
+router.get('/brexit/pre-deal/v10', function(req, res) {
+  res.render('brexit/pre-deal/index-v10');
+});
+
+router.get('/brexit/pre-deal/v11', function(req, res) {
+  res.render('brexit/pre-deal/index-v11');
+});
+
 
 // Deal
 router.get('/brexit/deal/v2', function(req, res) {
