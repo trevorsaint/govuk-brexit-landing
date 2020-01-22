@@ -182,6 +182,10 @@ router.get('/transition/v2/index', function(req, res) {
   res.render('transition/v2/index');
 });
 
+router.get('/transition/v3/index', function(req, res) {
+  res.render('transition/v3/index');
+});
+
 
 
 // Deal
