@@ -178,6 +178,11 @@ router.get('/transition/index', function(req, res) {
   res.render('transition/index');
 });
 
+router.get('/transition/v2/index', function(req, res) {
+  res.render('transition/v2/index');
+});
+
+
 
 // Deal
 router.get('/brexit/deal/v2', function(req, res) {
