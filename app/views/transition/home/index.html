@@ -4,22 +4,22 @@
 {% block pageTitle %}Welcome to GOV.UK{% endblock %}
 
 
-{% set mainClasses = "govuk-!-padding-top-0  govuk-main-wrapper--brexit" %}
+{% set mainClasses = "govuk-!-padding-top-0  govuk-main-wrapper--negative-shift" %}
 
 
 {% block content %}
 
-<!-- Brexit alert -->
-<div class="govuk-brexit-alert" id="brexit-alert" role="alert">
+<!-- Transition alert -->
+<div class="govuk-transition-alert" id="transition-alert" role="alert">
 
   <div class="govuk-grid-row">
 
     <div class="govuk-grid-column-two-thirds">
-      <p class="govuk-brexit-alert__title">The UK has left the EU with a deal <br> <a class="govuk-brexit-alert__link govuk-link govuk-link--no-visited-state" href="#">Find out what this means for you</a></p>
+      <p class="govuk-transition-alert__title">The UK has left the EU <br> <a class="govuk-transition-alert__link govuk-link govuk-link--no-visited-state" href="/transition/left/v1">Find out what this means for you</a></p>
     </div>
 
     <div class="govuk-grid-column-one-third">
-      <button class="govuk-brexit-alert__hide" type="button">Hide message</button>
+      <button class="govuk-transition-alert__hide" type="button">Hide message</button>
     </div>
 
   </div>
@@ -77,13 +77,13 @@
 
 
 <!-- Get ready for Brexit -->
-<!--section class="govuk-home-services" aria-labelledby="get-ready-for-brexit">
+<!--section class="govuk-home-services" aria-labelledby="get-ready-for-transition">
 
   <div class="govuk-grid-row">
 
     <div class="govuk-grid-column-two-thirds">
 
-      <h2 class="govuk-heading-m" id="get-ready-for-brexit">The UK has left the EU with a deal</h2>
+      <h2 class="govuk-heading-m" id="get-ready-for-transition">The UK has left the EU with a deal</h2>
 
       <p>There is now a transition period until the end of 2020. The details of the UK’s future relationship with the EU are now being negotiated.</p>
 
@@ -327,7 +327,7 @@
   <script src="/public/javascripts/hide-message.js"></script>
   <script>
     new HideMessage({
-      container: document.getElementById('brexit-alert')
+      container: document.getElementById('transition-alert')
     });
   </script>
 {% endblock %}

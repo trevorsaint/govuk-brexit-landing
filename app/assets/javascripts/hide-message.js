@@ -1,6 +1,6 @@
 function HideMessage(params) {
   this.container = params.container;
-  this.button = this.container.querySelector('.govuk-brexit-alert__hide');
+  this.button = this.container.querySelector('.govuk-transition-alert__hide');
   this.setupHideMessage();
 }
 

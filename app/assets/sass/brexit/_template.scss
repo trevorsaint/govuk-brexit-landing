@@ -3,14 +3,14 @@ body {
 }
 
 
-.govuk-main-wrapper--brexit {
+.govuk-main-wrapper--negative-shift {
   margin-top: - govuk-spacing(2);
 }
 
 
 // Masthead
 .govuk-landing-masthead {
-  background-color: govuk-brexit-colour("blue");
+  background-color: govuk-transition-colour("dark-blue");
   color: govuk-colour("white");
   padding-bottom: govuk-spacing(5);
   padding-top: govuk-spacing(5);
@@ -37,11 +37,6 @@ body {
 }
 
 
-.govuk-landing-masthead--alt {
-  background-color: govuk-colour("blue");
-}
-
-
 // GOVUK home specific masthead
 .govuk-landing-masthead--home {
   @include govuk-responsive-margin(6, "bottom");
@@ -56,7 +51,7 @@ body {
 
 // Alert
 .govuk-landing-alert {
-  background-color: govuk-brexit-colour("red");
+  background-color: govuk-transition-colour("red");
   color: govuk-colour("white");
   padding-bottom: govuk-spacing(5);
   padding-top: govuk-spacing(5);
@@ -119,7 +114,7 @@ body {
 
 // Sections
 .govuk-landing-page__section {
-  border-top: 3px solid govuk-brexit-colour("red");
+  border-top: 3px solid govuk-transition-colour("red");
   padding-bottom: govuk-spacing(7);
   padding-top: govuk-spacing(7);
 
