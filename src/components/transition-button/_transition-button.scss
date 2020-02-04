@@ -1,0 +1,48 @@
+// Transition button variables
+$govuk-transition-blue: #182D4E;
+
+$govuk-transition-button-colour: govuk-colour("white");
+$govuk-transition-button-hover-colour: govuk-shade($govuk-transition-button-colour, 10%);
+$govuk-transition-button-shadow-colour: govuk-shade($govuk-transition-blue, 40%);
+$govuk-transition-button-text-colour: govuk-colour("blue");
+$govuk-transition-button-hover-text-colour: $govuk-transition-blue;
+
+$button-shadow-size: $govuk-border-width-form-element;
+
+.govuk-button--transition {
+  @include govuk-typography-weight-bold;
+  @include govuk-typography-responsive($size: 24, $override-line-height: 1);
+  background-color: $govuk-transition-button-colour;
+  box-shadow: 0 $button-shadow-size 0 $govuk-transition-button-shadow-colour;
+  display: inline-flex;
+  margin-top: govuk-spacing(2);
+  min-height: auto;
+  width: auto;
+
+  &,
+  &:link,
+  &:visited,
+  &:active,
+  &:hover {
+    color: $govuk-transition-button-text-colour;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $govuk-transition-button-hover-colour;
+    color: $govuk-transition-button-hover-text-colour;
+  }
+
+}
+
+.govuk-button__transition-icon {
+  align-self: center;
+  flex-shrink: 0;
+  margin-left: govuk-spacing(1);
+  vertical-align: middle;
+
+  @include govuk-media-query($from: desktop) {
+    margin-left: govuk-spacing(2);
+  }
+
+}
